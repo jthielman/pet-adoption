@@ -214,7 +214,7 @@ const pets = [
 
   const showOnPage = (toShow, divId) => {
       document.getElementById(divId).innerHTML = toShow;
-  }
+  };
 
 const petCardBuilder = (petArr) => {
     let cardString = '';
@@ -231,8 +231,27 @@ const petCardBuilder = (petArr) => {
             <p>${pet.specialSkill}</p>
         </div>
         <div class="${pet.type}">${pet.type}</div>
-    </div>`;
+    </div>`
     }
     showOnPage(cardString, 'cardholder');
-}
+};
+
+const showPets = (e) => {
+    const petKind = e.target.id;
+    const chosenPets = [];
+    for (let i = 0; i < pets.length; i++) {
+        if (pets[i].type === petKind) {
+            chosenPets.push(pets[i]);
+        }
+    }
+    petCardBuilder(chosenPets);
+};
+
+document.getElementById('cat').addEventListener('click', showPets);
+document.getElementById('dog').addEventListener('click', showPets);
+document.getElementById('dino').addEventListener('click', showPets);
+document.getElementById('all').addEventListener('click', () => {
+    petCardBuilder(pets)
+});
+
 petCardBuilder(pets);
