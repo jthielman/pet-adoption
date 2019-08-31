@@ -1,3 +1,121 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(210, 244, 255);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.buttonholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    margin: 2em;
+    width: 80px;
+    color: white;
+    border-radius: 5px;
+}
+
+#cat {
+    background-color: rgb(80, 80, 160);
+    border: 5px solid rgb (80, 80, 160);
+}
+
+#dog {
+    background-color: rgb(0, 143, 63);
+    border: 5px solid rgb(0, 143, 63);
+}
+
+#dino {
+    background-color: rgb(230, 127, 63);
+    border: 5px solid rgb(230, 127, 63);
+}
+
+#all {
+    background-color: rgb(63, 63, 63);
+    border: 5px solid rgb(63, 63, 63);
+}
+
+#cardholder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    margin: 1em;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.petname {
+    width: 100%;
+    text-align: center;
+    background-color: lightgrey;
+    border-bottom: 1px solid darkgrey;
+    border-radius: inherit;
+    color: rgb(63, 63, 63);
+}
+
+.petinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 2em;
+    flex-grow: 1;
+}
+
+img {
+    width: 80%;
+    margin: 1em;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    padding: 1em;
+    text-align: justify;
+    margin: 0;
+}
+
+.kind {
+    text-transform: capitalize;
+    width: 100%;
+    border-radius: inherit;
+    text-align: center;
+    color: antiquewhite;
+    position: absolute;
+    bottom: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.cat {
+    color: rgb(80, 80, 160);
+    background-color: rgb(200, 200, 255);
+}
+
+.dog {
+    color: rgb(1, 128, 56);
+    background-color: rgb(28, 224, 113)
+}
+
+.dino {
+    color: rgb(204, 104, 42);
+    background-color: rgb(255, 194, 155);
+}
+
+.all {
+    color: rgb(63, 63, 63);
 }

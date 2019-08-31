@@ -230,7 +230,7 @@ const petCardBuilder = (petArr) => {
             <h4>${pet.color}</h4>
             <p>${pet.specialSkill}</p>
         </div>
-        <div class="${pet.type}">${pet.type}</div>
+        <div class="kind ${pet.type}">${pet.type}</div>
     </div>`
     }
     showOnPage(cardString, 'cardholder');
